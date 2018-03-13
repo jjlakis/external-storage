@@ -3,6 +3,8 @@ apiVersion: v1
 metadata:
   name: test-pod
 spec:
+  nodeSelector:
+    numer: zero
   containers:
   - name: test-pod
     image: gcr.io/google_containers/busybox:1.24
